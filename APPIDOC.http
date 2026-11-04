@@ -1,0 +1,210 @@
+###
+GET http://127.0.0.1:8000/questions/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+    "question": "What is Python?",
+    "option_a": "Programming Language",
+    "option_b": "Operating System",
+    "option_c": "Web Browser",
+    "option_d": "Database",
+    "correct_answer": "A"
+}
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+    "question": "Who developed Python?",
+    "option_a": "James Gosling",
+    "option_b": "Guido van Rossum",
+    "option_c": "Dennis Ritchie",
+    "option_d": "Bjarne Stroustrup",
+    "correct_answer": "B"
+}
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+    "question": "Which symbol is used for comments in Python?",
+    "option_a": "//",
+    "option_b": "/* */",
+    "option_c": "#",
+    "option_d": "<!-- -->",
+    "correct_answer": "C"
+}
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+    "question": "Which data type stores True or False?",
+    "option_a": "int",
+    "option_b": "str",
+    "option_c": "list",
+    "option_d": "bool",
+    "correct_answer": "D"
+}
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+    "question": "Which keyword is used to define a function in Python?",
+    "option_a": "def",
+    "option_b": "function",
+    "option_c": "fun",
+    "option_d": "define",
+    "correct_answer": "A"
+}
+
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+    "question": "Which collection is ordered and mutable?",
+    "option_a": "tuple",
+    "option_b": "list",
+    "option_c": "set",
+    "option_d": "frozenset",
+    "correct_answer": "B"
+}
+
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+    "question": "Which operator is used for exponentiation in Python?",
+    "option_a": "%",
+    "option_b": "//",
+    "option_c": "**",
+    "option_d": "/",
+    "correct_answer": "C"
+}
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+    "question": "Which keyword is used to create a loop in Python?",
+    "option_a": "repeat",
+    "option_b": "loop",
+    "option_c": "iterate",
+    "option_d": "for",
+    "correct_answer": "D"
+}
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+    "question": "What is the output of print(2 + 3)?",
+    "option_a": "5",
+    "option_b": "23",
+    "option_c": "6",
+    "option_d": "2 + 3",
+    "correct_answer": "A"
+}
+
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+    "question": "Which method adds an item to the end of a list?",
+    "option_a": "add()",
+    "option_b": "append()",
+    "option_c": "insert_end()",
+    "option_d": "push()",
+    "correct_answer": "B"
+}
+
+
+###
+GET http://127.0.0.1:8000/questions/3/
+Accept: application/json
+
+
+###
+PUT http://127.0.0.1:8000/questions/2/
+Content-Type: application/json
+
+{
+    "question": "Which keyword is used to define a function in Python?",
+    "option_a": "def",
+    "option_b": "function",
+    "option_c": "fun",
+    "option_d": "define",
+    "correct_answer": "A"
+}
+
+###
+DELETE http://127.0.0.1:8000/questions/4/
+
+
+
+# api for submissions
+
+###
+GET http://127.0.0.1:8000/submissions/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/submissions/
+Content-Type: application/json
+
+{
+
+    "student_name": "Rahul",
+    "question": 1,
+    "selected_answer": "option_a"
+}
+
+###
+POST http://127.0.0.1:8000/submissions/
+Content-Type: application/json
+
+{
+    "student_name": "Anu",
+    "question": 6,
+    "selected_answer": "option_b"
+}
+
+###
+POST http://127.0.0.1:8000/submissions/
+Content-Type: application/json
+
+{
+    "student_name": "Neha",
+    "question": 5,
+    "selected_answer": "option_c"
+}
+
+###
+PUT http://127.0.0.1:8000/submissions/1/
+Content-Type: application/json
+
+{
+    "student_name": "Anu",
+    "question": 7,
+    "selected_answer": "option_d"
+}
+
+###
+DELETE http://127.0.0.1:8000/submissions/2/
